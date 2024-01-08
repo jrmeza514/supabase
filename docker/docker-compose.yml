@@ -24,7 +24,7 @@ services:
       interval: 5s
       retries: 3
     ports:
-      ${STUDIO_PORT}:3000/tcp
+      - ${STUDIO_PORT}:3000/tcp
     depends_on:
       analytics:
         condition: service_healthy
